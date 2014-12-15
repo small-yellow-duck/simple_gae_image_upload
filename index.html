@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+
+<img src={{img_src}} width=500/>
+<p>
+Current image url: {{img_src}}
+<br>
+Upload url: {{upload_url}}
+<p>
+<form action="{{ upload_url }}" method="post" enctype="multipart/form-data" >
+    <regular> upload image: </regular><input type="file" name="upload" id="upload" onchange="this.form.submit()" /><br />
+</form>
+
+</body>
+</html>
